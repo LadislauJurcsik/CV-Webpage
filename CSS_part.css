@@ -1,0 +1,434 @@
+/* CSS part. We import the fonts */ 
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Titillium+Web:wght@200;300;400;600;700&family=Yellowtail&display=swap');
+*{
+	font-family: "Titillum Web";
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+/* Initial section */
+.initial {
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),url("background.jpg");
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+}
+
+.initial .content-section {
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+	padding: 0 10px;
+}
+
+.initial .content-section header {
+	padding: 30px;
+}
+
+/* Lateral menu */ 
+
+.initial .content-section header nav {
+	position: fixed;
+	margin-left: 60px;
+	background-color: #e448bd;
+	padding: 15px;
+	border-radius: 10px;
+	text-align: left;
+	z-index: 99;
+	display: none;
+}
+
+.initial .content-section header nav a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+/* ****** */
+.initial .content-section header .logo {
+	font-weight: bold;
+	font-size: 75px;
+	font-family: "Yellowtail";
+	text-shadow: 0 0 35px #fff;
+}
+
+.initial .content-section header .logo .color {
+	color: #940253;
+	font-family: "Yellowtail";
+	font-size: 75px;
+}
+
+.initial .content-section header .nav-bar {
+	position: fixed;
+	background-color: #e448bd;
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	line-height: 50px;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.initial .content-section header .nav-bar:hover {
+	box-shadow: 0 0 35px #fff;
+}
+
+.initial .content-section .info {
+	padding-bottom: 130px;
+}
+
+.initial .content-section .info h1 {
+	font-size: 3rem;
+	letter-spacing: 5px;
+	margin-bottom: 10px;
+}
+
+.initial .content-section .info h2 {
+	font-weight: normal;
+	font-size: 20px;
+	margin-top: -10px;
+	letter-spacing: 2px;
+}
+
+.initial .content-section .info .networks {
+	margin: 20px 0;
+}
+
+.initial .content-section .info .networks a {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #000;
+	color: #940253;
+	border: 1px solid #940253;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 5px;
+	transition: .3s;
+}
+
+.initial .content-section .info .networks a:hover {
+	color: #fff;
+	background-color: #940253;
+	box-shadow: 0 0 20px #fff;
+}
+
+.initial .content-section .foto {
+	position: relative;
+}
+
+.initial .content-section .foto img {
+	max-width: 200px;
+	border-radius: 50%;
+	border: 5px solid #940253;
+	position: absolute;
+	left: 50%;
+	top: -100px;
+	transform: translateX(-50%);
+	width: 210px;
+	height: 240px;
+}
+
+/* Section About me */
+/* General style */ 
+.title-section {
+	font-family: "papyrus";
+	font-size: 1.5rem;
+}
+.aboutme {
+	background-color: #e6e6e6;
+	padding: 140px 0 100px 0;
+	text-align: center;
+}
+
+.aboutme .content-section {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.aboutme .content-section h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: "Comic Sans MS";
+}
+
+.aboutme .content-section .special {
+	color: #940253;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.aboutme .content-section p {
+	max-width: 700px;
+	margin: auto;
+	color: #666;
+}
+
+.aboutme .content-section .fila {
+	display: flex;
+	margin-top: 30px;
+	justify-content: space-between;
+}
+
+.aboutme .content-section .fila .col {
+	width: 30%;
+}
+
+.aboutme .content-section .fila .col i {
+	color: #940253;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border: 2px solid #940253;
+	line-height: 40px;
+	border-radius: 50%;
+}
+
+.aboutme .content-section .fila .col span {
+	display: block;
+	font-weight: bold;
+	margin: 8px0;
+}
+
+/* Skills section */
+.skills {
+	padding: 80px 0 100px 0;
+	text-align: center;
+	background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url("desk.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	color: #fff;
+}
+
+.skills .content-section {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.skills .content-section h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.skills .content-section .fila {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.skills .content-section .fila .col {
+	width: 47%;
+	text-align: left;
+}
+
+.skills .content-section .fila .col .counter-slash {
+	display: flex;
+	align-items: center;
+}
+
+.skills .content-section .slash {
+	display: flex;
+	border: 1px solid #940253;
+	padding: 2px;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.skills .content-section .slash .e {
+	background-color: #363636;
+	width: 20px;
+	height: 30px;
+	margin-right: 2px;
+}
+
+/* Summary Section */ 
+.summary {
+	background-color: #e6e6e6;
+	padding: 140px 0 100px 0;
+	text-align: center;
+}
+
+.summary .content-section1 {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.summary .content-section1 h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.summary .content-section1 .info { 
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.summary .content-section1 .info .col {
+	width: 45%;
+}
+
+.summary .content-section1 .info .col .title {
+	display: inline-block;
+	color: #940253;
+	font-weight: bold;
+	border: 2px solid #940253;
+	padding: 10px;
+}
+
+.summary .content-section1 .info .col table {
+	margin-top: 30px;
+	border-collapse: collapse;
+}
+
+.summary .content-section1 .info .col table .date {
+	width: 40%;
+	border-bottom: 1px solid #bab9b9;
+}
+
+.summary .content-section1 .info .col table h4 { 
+	margin-top: 10px;
+}
+
+.summary .content-section1 .info .col table h3 { 
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.summary .content-section1 .info .col table p { 
+	font-size: 14px;
+}
+
+.summary .content-section1 .info .col table .average {
+	display: block;
+	color: #940253;
+	margin-top: 10px;
+	font-weight: bold; 
+}
+
+.summary .content-section1 .info .col table .Description {
+	border-left: 1px solid #bab9b9;
+	padding-left: 20px;
+}
+
+.contact {
+	background-color: #202020;
+	padding: 140px 0 100px 0;
+	color: #e6e6e6;
+	text-align: center;
+}
+
+.contact .content-section2 {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 10px;
+}
+
+.contact .content-section2 h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+.contact .content-section2 .fila {
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact .content-section2 .fila .col {
+	margin-top: 50px;
+}
+
+.contact .content-section2 .fila .col h2 {
+	color: #940253;
+}
+
+/* Section Responsive */ 
+@media screen and (max-width:800px) {
+	.skills .content-section .fila {
+		display: block;
+	}
+
+	.skills .content-section .fila .col {
+		width: 100%;
+		text-align: center;
+	}
+
+	.skills .content-section .fila .col .counter-slash {
+		justify-content: center;
+	}
+
+	.aboutme .content-section .fila {
+		display: block;
+	}
+
+	.aboutme .content-section .fila .col {
+		width: 80%;
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.summary .content-section1 .info {
+		display: block;
+	}
+
+	.summary .content-section1 .info .col {
+		width: 90%;
+		margin: auto;
+	}
+
+	.summary .content-section1 .info .col .title {
+		display: block;
+		text-align: center;
+	}
+
+	.summary .content-section1 .info .col table {
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.contact .content-section2 .fila {
+		display: block;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
